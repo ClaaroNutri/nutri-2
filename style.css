@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    scroll-behavior: smooth;
+    width: 100%;
+}
+nav{
+    background-color: #081C15;
+    width: 100%;
+}
+.navbar-brand, .nav-link{
+    color: #95d5b2;
+}
+.navbar-brand:hover, .nav-link:hover{
+    color: #52b788;
+}
+.navbar-brand:hover{
+    letter-spacing: 0.2rem;
+}
+.nav-link{
+    margin-right: 40px;
+}
+.navbar-brand{
+    margin-left: 40px;
+}
+
+  
+.card-img{
+    height: 410px;
+}
+.what{
+    position: fixed;
+    z-index:4;
+    margin-left: 75%;   
+    top:570px;
+    
+}
+.parallax {
+    background: url("img/pexels-beyzahzah-15319038.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.sobre{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    background-color: #d8f3dc;
+    margin-bottom: 50px;
+}
+.card{
+    box-shadow: 1px 3px 13px #b1b1b1;
+}
+.tarjetas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    letter-spacing: 0.1rem;
+    
+}
+.card-body h5{
+    text-align: center;
+}
+.card-body p{
+    text-align: justify;
+}
+.card-title:hover{
+    letter-spacing:0.3rem ;
+    color:#52b788
+}
+.linea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:30px
+    
+}
+hr{
+    border:1px solid #081C15;
+    width: 70%;
+    
+}
+.btn-card{
+    background-color: #40916c;
+    color:#95d5b2;
+    font-weight: bold;
+    
+}
+.btn-card:hover{
+    color:#1b4332;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color:#081C15;
+ 
+}
+.foo{
+    gap: 65px;
+}
+.icon:hover{
+    transform: scale(1.5);
+    transition: 3s;
+}
+@media (max-width:460px){
+    .tarjetas{
+        gap:35px;
+    }
+    .foo{
+        gap:20px;   
+    }
+    .sobre{
+        width:90vw;
+    }
+    .what{
+        margin-left: 65%;
+    }
+    .tarjetas{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
